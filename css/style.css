@@ -21,7 +21,7 @@ body.gradient-bg {
     background-size: 100% 100%;
     background-position: center center;
     animation: shrink 15s infinite alternate;
-    height: 400px;
+    height: 500px;
     text-align: center;
     color: rgb(255, 255, 255);
     overflow: hidden;
@@ -274,5 +274,42 @@ body.gradient-bg {
   padding: 5px;
 }
 
-/* about page styles*/
+/* about.html page styles*/
 
+.icon {
+  font-size: 2rem;
+  color: #ff2a2a; /* gradient could be added if using SVG or font library that supports it */
+  }
+
+.feature-box {
+  text-align: left;
+  padding: 20px;
+  }
+
+.feature-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  }
+
+  /* few words section */
+  .few-words-message {
+    text-align: justify;
+  }
+
+  /* meet team */
+  .meet-team {
+    background-color: rgb(247, 240, 240);
+  }
+
+  .meet-team-container {
+    border-bottom: 2px solid red;
+  }
+
+  .meet-team-title {
+    margin-bottom: 20px;
+  }
+
+  .card-text {
+    font-weight: bold;
+    margin-bottom: 0;
+  }
