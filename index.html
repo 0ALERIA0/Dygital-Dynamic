@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div class="white-bg py-5">
-    <div class="container my-container">
+    <div class="container-fluid my-container">
         <section id="home-intro" class="top-section img-fluid">
                     <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
@@ -43,6 +42,20 @@
                 </div>
             </div>
             </nav>
+            <!-- Floating nav toggle -->
+            <div id="floating-nav" class="">
+                <button id="floating-toggle" class="btn btn-light shadow">
+                    <i class="fa-solid fa-bars fa-2xl"></i>
+                </button>
+                <div class="floating-menu shadow p-3">
+                    <a class="d-block text-dark text-decoration-none mb-2 float-hover" href="index.html">Home</a>
+                    <a class="d-block text-dark text-decoration-none mb-2 float-hover" href="about.html">About</a>
+                    <a class="d-block text-dark text-decoration-none mb-2 float-hover" href="services.html">Services</a>
+                    <a class="d-block text-dark text-decoration-none mb-2 float-hover" href="careers.html">Careers</a>
+                    <a class="d-block text-dark text-decoration-none float-hover" href="contact.html">Contact</a>
+                </div>
+            </div>
+            <!--welcome section-->
              <div class="dd-welcome">
                   <h2>Welcome to</h2>
                   <h1 id="company-name"><strong>Dygital Dynamic</strong></h1>
@@ -240,9 +253,9 @@
                         <!-- Company -->
                         <div class="col-md-2">
                         <h6 class="fw-bold">COMPANY</h6>
-                        <a href="#" class="footer-link">About Our Services</a>
+                        <a href="services.html" class="footer-link">About Our Services</a>
                         <a href="#" class="footer-link">Our Projects</a>
-                        <a href="#" class="footer-link">Check Our Careers</a>
+                        <a href="careers.html" class="footer-link">Check Our Careers</a>
                         </div>
 
                         <!-- Support -->
@@ -257,7 +270,7 @@
                         <h6 class="fw-bold">MORE INFO</h6>
                         <a href="#" class="footer-link">Privacy Policy</a>
                         <a href="#" class="footer-link">Terms of Service</a>
-                        <a href="#" class="footer-link">Contact us</a>
+                        <a href="contact.html" class="footer-link">Contact us</a>
                         </div>
 
                         <!-- Contact Info -->
@@ -272,11 +285,22 @@
                 </footer>
             </section>
             <footer>
-                <p>&copy; 2020 Dygital Dynamic. All rights reserved.</p>
+                <div class="container">
+                <div>
+                    <p>&copy; 2020 Dygital Dynamic. All rights reserved.</p>
+                </div>
+                <div class="links">
+                    <a href="#"><i class="fa-brands fa-square-facebook fa-xl" style="color: #005cfa;"></i></a>
+                    <a href=""><i class="fa-brands fa-square-instagram fa-xl" style="color: #ff4797;"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin fa-xl" style="color: #00d5ff;"></i></a>
+                    <a href=""><i class="fa-brands fa-square-x-twitter fa-xl" style="color: #74C0FC;"></i></a>
+                </div>
+                </div>
+                
+                
               </footer>
-    </div>
+</div>
 
-    </div>
 
 <script src="javascript/javascript.js"></script>
 <script src="javascript/bootstrap.bundle.min.js"></script>
