@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div class="body-style py-5">
+<div class="white-bg py-5">
     <div class="container my-container">
         <section id="home-intro" class="top-section img-fluid">
                     <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="asset/Dygital logo.jpg" alt="" width="90" height="60">
+                    <img src="asset/Dygital logo.jpg" alt="" width="100" height="60">
                 </a>
                 <button class="navbar-toggler toggler-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -22,16 +22,22 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item active-link">
-                    <a class="nav-link active " aria-current="page" href="about.html">Home</a>
+                    <a class="nav-link active " aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item link-nav-hover">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="about.html">About</a>
                     </li>
                     <li class="nav-item link-nav-hover">
-                    <a class="nav-link" href="#">Services</a>
+                    <a class="nav-link" href="services.html">Services</a>
                     </li>
                     <li class="nav-item link-nav-hover">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="careers.html">Careers</a>
+                    </li>
+                    <li class="nav-item link-nav-hover">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <button class="btn link-nav-hover toggle-btn" onclick="toggleBackground()"><i class="fa-solid fa-circle-half-stroke fa-xl"></i></button>
                     </li>
                 </ul>
                 </div>
@@ -51,14 +57,230 @@
                     </div>
                 </div>
             </section>
-            <section>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam cum veniam qui illo maxime minima, consectetur eos sit enim dicta provident iure impedit at non optio porro dolores deserunt quis.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam cum veniam qui illo maxime minima, consectetur eos sit enim dicta provident iure impedit at non optio porro dolores deserunt quis.</p>
+            <section class="about-section">
+                <div class="row p-5 about-row d-lg-flex align-items-stretch">
+                    <!-- Text Column -->
+                    <div class="col-12 col-lg-6 mb-3 d-flex flex-column">
+                        <div class="about-us-message mb-3">
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="fa-solid fa-circle-question fa-xl" style="color: #ff2600;"></i>
+                                <h3 class="about-us-title">About Us</h3>
+                            </div>
+                            <p>
+                                At Dygital Dynamic, we specialize in providing high-quality business process outsourcing
+                                (BPO) solutions with a unique approach. Leveraging a team of highly skilled BPO
+                                professionals, we offer a flexible work-from-home setup that ensures the same standards
+                                of excellence and efficiency as larger providers—at a more competitive rate.
+                            </p>
+                        </div>
+                        <div class="row mission-vision mt-auto">
+                            <div class="col-12 col-md-6">
+                                <h4>Mission</h4>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet qui, magni dolore enim nam voluptas rerum eius vel voluptate ex officiis sunt nemo, tempora id inventore. Corporis nesciunt aspernatur quidem.</p>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <h4>Vision</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, tempora consectetur? Dolor, assumenda debitis delectus perspiciatis quo molestias aliquam voluptates quae voluptatem nihil totam ad nesciunt, ex, suscipit fuga tenetur?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 d-none d-lg-flex align-items-stretch">
+                        <img class="img-fluid rounded w-100" src="asset/about-us-sample-image.jpg" alt="About-us-call-center-image" style="object-fit: cover;">
+                    </div>
+                </div>
             </section>
+            <!--services section-->
+            <section class="services-home py-5">
+                <h4 class="text-center">We Provide Best Services</h4>
+                <p class=" lead text-center">To be a trusted outsourcing partner, consistently exceeding expectations with every delivery.</p>
+                <div class="container">
+                    <div class="row g-4">
+                    <!-- Card 1 -->
+                    <div class="col-md-6 col-lg-6 card-hover">
+                        <div class="card p-4 h-100 shadow-sm">
+                        <div class="d-flex">
+                            <i class="fa-solid fa-headset fa-2xl me-3" style="color: #ff0000;"></i>
+                            <div>
+                            <h5 class="fw-bold">Call Center Service</h5>
+                            <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean egestas magna at porttitor vehicula nullam augue ipsum dolor.</p>
+                            <a href="service.html" class="text-decoration-none">Read More <i class="fa-solid fa-angles-right ms-1"></i></a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="col-md-6 col-lg-6 card-hover">
+                        <div class="card p-4 h-100 shadow-sm">
+                        <div class="d-flex">
+                            <i class="fa-solid fa-phone fa-2xl me-3" style="color: #ff0000;"></i>
+                            <div>
+                            <h5 class="fw-bold">Lead Generation</h5>
+                            <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean egestas magna at porttitor vehicula nullam augue ipsum dolor.</p>
+                            <a href="service.html" class="text-decoration-none">Read More <i class="fa-solid fa-angles-right ms-1"></i></a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col-md-6 col-lg-6 card-hover">
+                        <div class="card p-4 h-100 shadow-sm">
+                        <div class="d-flex">
+                            <i class="fa-solid fa-calculator fa-2xl me-3" style="color: #ff0606;"></i>
+                            <div>
+                            <h5 class="fw-bold">Finance and Accounting</h5>
+                            <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean egestas magna at porttitor vehicula nullam augue ipsum dolor.</p>
+                            <a href="service.html" class="text-decoration-none">Read More <i class="fa-solid fa-angles-right ms-1"></i></a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="col-md-6 col-lg-6 card-hover">
+                        <div class="card p-4 h-100 shadow-sm">
+                        <div class="d-flex">
+                            <i class="fa-solid fa-hashtag fa-2xl me-3" style="color: #ff0000;"></i>
+                            <div>
+                            <h5 class="fw-bold">Social Media Management</h5>
+                            <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean egestas magna at porttitor vehicula nullam augue ipsum dolor.</p>
+                            <a href="service.html" class="text-decoration-none">Read More <i class="fa-solid fa-angles-right ms-1"></i></a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                 <div class="d-flex justify-content-center">
+                    <a href="services.html"><button type="button" class="btn btn-outline-danger my-3">Learn More Services</button></a>
+                </div>
+            </section>
+            <!--open background section-->
+            <section class="open-background">
+                    <div class="open-bg">
+                      <div class="transparent-plate">
+
+                      </div>
+
+                    </div>
+            </section>
+            <!--testimonials section-->
+            <section class="py-2 testimonials">
+                <div class="container p-5">
+                    <h2 class="text-center fw-bold mb-5">Testimonials</h2>
+                    <div class="row text-center text-md-start g-4">
+                    
+                    <!-- Testimonial 1 -->
+                    <div class="col-md-4 testimonial-card">
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit sed. Orci urna. In et augue ornare,
+                        tempor massa in, luctus sapien. Proin a diam et dui fermentum dolor molestie vel id neque 
+                        euismod massa a quam viverra et.
+                        </p>
+                        <div class="d-flex align-items-center mt-4">
+                        <img src="asset/jon snow.jpg" class="rounded-circle me-3" alt="Theo Hall">
+                        <div>
+                            <strong>Jon Snow</strong><br>
+                            <small class="text-muted">Marketing Manager</small>
+                        </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="col-md-4 testimonial-card">
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit sed. Orci urna. In et augue ornare,
+                        tempor massa in, luctus sapien. Proin a diam et dui fermentum dolor molestie vel id neque 
+                        euismod massa a quam viverra et.
+                        </p>
+                        <div class="d-flex align-items-center mt-4">
+                        <img src="asset/daenerys targaryen.jpg" class="rounded-circle me-3" alt="Jenna John">
+                        <div>
+                            <strong>Daenerys Targaryen</strong><br>
+                            <small class="text-muted">Co-founder of Company</small>
+                        </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="col-md-4 testimonial-card">
+                        <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit sed. Orci urna. In et augue ornare,
+                        tempor massa in, luctus sapien. Proin a diam et dui fermentum dolor molestie vel id neque 
+                        euismod massa a quam viverra et.
+                        </p>
+                        <div class="d-flex align-items-center mt-4">
+                        <img src="asset/steve harrington.jpg" class="rounded-circle me-3" alt="William Due">
+                        <div>
+                            <strong>Steve Harrington</strong><br>
+                            <small class="text-muted">Team Leader</small>
+                        </div>
+                        </div>
+                    </div>
+
+                    </div>
+                </div>
+            </section>
+            <section class="contact-info-home p-3 text-center">
+                <h2>Contact us now!</h2>
+                <p>For Online queries, please call us today</p>
+                <div class="d-flex justify-content-center align-items-center gap-3 mt-3">
+                    <p class="mb-0 fw-bold"><i class="fa-solid fa-phone-volume fa-xl" style="color: #ff0000;"></i>
+                         09123456789</p>
+                    <span>Or</span>
+                    <a href="contact.html"><button class="btn btn-outline-danger">Get in touch</button></a>
+                </div>
+            </section>
+            <!--Footer Section-->
+            <section>
+                <footer class="footer text-white">
+                    <div class="container p-5">
+                    <div class="row justify-content-center text-center text-md-star gy-4">
+                        <!-- Company -->
+                        <div class="col-md-2">
+                        <h6 class="fw-bold">COMPANY</h6>
+                        <a href="#" class="footer-link">About Our Services</a>
+                        <a href="#" class="footer-link">Our Projects</a>
+                        <a href="#" class="footer-link">Check Our Careers</a>
+                        </div>
+
+                        <!-- Support -->
+                        <div class="col-md-2">
+                        <h6 class="fw-bold">SUPPORT</h6>
+                        <a href="#" class="footer-link">FAQ's</a>
+                        <a href="#" class="footer-link">Terms of Service</a>
+                        </div>
+
+                        <!-- More Info -->
+                        <div class="col-md-2">
+                        <h6 class="fw-bold">MORE INFO</h6>
+                        <a href="#" class="footer-link">Privacy Policy</a>
+                        <a href="#" class="footer-link">Terms of Service</a>
+                        <a href="#" class="footer-link">Contact us</a>
+                        </div>
+
+                        <!-- Contact Info -->
+                        <div class="col-md-6">
+                        <h6 class="fw-bold">CONTACT INFO</h6>
+                        <p><i class="fa-solid fa-location-dot fa-xl contact-icon"></i>Anywhere St. Somewhere City</p>
+                        <p><i class="fa-solid fa-phone fa-xl contact-icon"></i>09123456789</p>
+                        <p><i class="fa-solid fa-envelope fa-xl contact-icon"></i>info@example.com</p>
+                        </div>
+                    </div>
+                    </div>
+                </footer>
+            </section>
+            <footer>
+                <p>&copy; 2020 Dygital Dynamic. All rights reserved.</p>
+              </footer>
     </div>
 
     </div>
 
+<script src="javascript/javascript.js"></script>
 <script src="javascript/bootstrap.bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/2311046888.js" crossorigin="anonymous"></script>
+
 </body>
 </html>
