@@ -78,7 +78,11 @@
                             <div>
                             <h5 class="fw-bold">Call Center Service</h5>
                             <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean egestas magna at porttitor vehicula nullam augue ipsum dolor.</p>
-                            <a href="service.html" class="text-decoration-none">Read More <i class="fa-solid fa-angles-right ms-1"></i></a>
+                            <button class="btn btn-link p-0 text-decoration-none read-more-btn"
+                                    data-title="Call Center Service"
+                                    data-description="We offer 24/7 customer support with professional agents ready to help.">
+                            Read More <i class="fa-solid fa-angles-right ms-1"></i>
+                            </button>
                             </div>
                         </div>
                         </div>
@@ -129,9 +133,9 @@
                     <div class="col-md-6 col-lg-6 card-hover">
                         <div class="card p-4 h-100 shadow-sm">
                         <div class="d-flex">
-                            <i class="fa-solid fa-hashtag fa-2xl me-3" style="color: #ff0000;"></i>
+                            <i class="fa-solid fa-folder-open fa-2xl me-3" style="color: #ff0000;"></i>
                             <div>
-                            <h5 class="fw-bold">Social Media Management</h5>
+                            <h5 class="fw-bold">Project Management</h5>
                             <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean egestas magna at porttitor vehicula nullam augue ipsum dolor.</p>
                             <a href="service.html" class="text-decoration-none">Read More <i class="fa-solid fa-angles-right ms-1"></i></a>
                             </div>
@@ -142,9 +146,9 @@
                     <div class="col-md-6 col-lg-6 card-hover">
                         <div class="card p-4 h-100 shadow-sm">
                         <div class="d-flex">
-                            <i class="fa-solid fa-hashtag fa-2xl me-3" style="color: #ff0000;"></i>
+                            <i class="fa-solid fa-handshake-angle fa-2xl me-3" style="color: #ff0000;"></i>
                             <div>
-                            <h5 class="fw-bold">Social Media Management</h5>
+                            <h5 class="fw-bold">Virtual and Executive Assistance</h5>
                             <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean egestas magna at porttitor vehicula nullam augue ipsum dolor.</p>
                             <a href="service.html" class="text-decoration-none">Read More <i class="fa-solid fa-angles-right ms-1"></i></a>
                             </div>
@@ -155,9 +159,9 @@
                     <div class="col-md-6 col-lg-6 card-hover">
                         <div class="card p-4 h-100 shadow-sm">
                         <div class="d-flex">
-                            <i class="fa-solid fa-hashtag fa-2xl me-3" style="color: #ff0000;"></i>
+                            <i class="fa-solid fa-voicemail fa-2xl me-3" style="color: #ff0000;"></i>
                             <div>
-                            <h5 class="fw-bold">Social Media Management</h5>
+                            <h5 class="fw-bold">Telemarketing</h5>
                             <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean egestas magna at porttitor vehicula nullam augue ipsum dolor.</p>
                             <a href="service.html" class="text-decoration-none">Read More <i class="fa-solid fa-angles-right ms-1"></i></a>
                             </div>
@@ -168,16 +172,35 @@
                     <div class="col-md-6 col-lg-6 card-hover">
                         <div class="card p-4 h-100 shadow-sm">
                         <div class="d-flex">
-                            <i class="fa-solid fa-hashtag fa-2xl me-3" style="color: #ff0000;"></i>
+                            <i class="fa-solid fa-computer fa-2xl me-3" style="color: #ff0000;"></i>
                             <div>
-                            <h5 class="fw-bold">Social Media Management</h5>
+                            <h5 class="fw-bold">It Support</h5>
                             <p class="mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean egestas magna at porttitor vehicula nullam augue ipsum dolor.</p>
-                            <a href="service.html" class="text-decoration-none">Read More <i class="fa-solid fa-angles-right ms-1"></i></a>
+                           <button class="btn btn-link p-0 text-decoration-none read-more-btn"
+                                    data-title="Call Center Service"
+                                    data-description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, possimus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, quis.">
+                            Read More <i class="fa-solid fa-angles-right ms-1"></i>
+                            </button>
                             </div>
                         </div>
                         </div>
                     </div>
                     </div>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="serviceModal" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title fw-bold" id="modalTitle">Service Title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" id="modalBody">
+                        Service Description...
+                    </div>
+                    </div>
+                </div>
                 </div>
             </section>
             <!--Contact us-->

@@ -314,6 +314,10 @@ body.gradient-bg {
     margin-bottom: 0;
   }
 
+  .card-about {
+    border: 3px solid red;
+  }
+
   /*services page*/
   .services-section {
     background-color: rgb(247, 240, 240);
